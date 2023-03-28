@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "efficiently-testing-etl-pipelines"
+version = "0.1.0"
+description = ""
+authors = ["jmasonlee <jmasonlee@gmail.com>"]
+readme = "README.md"
+packages = [{include = "efficiencies_of_right_sizing_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
