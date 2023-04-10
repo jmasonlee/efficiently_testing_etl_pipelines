@@ -1,5 +1,5 @@
 tasks:
   - name: create virtualenv
-    before: pyenv install 3.8
+    before: pyenv install 3.8 & pyenv local 3.8
     init: poetry install
     command: poetry shell
