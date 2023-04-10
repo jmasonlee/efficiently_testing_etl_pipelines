@@ -1,3 +1,4 @@
+
 tasks:
   - name: create virtualenv 
     init: |
@@ -7,3 +8,7 @@ tasks:
       poetry install
       
     command: poetry shell
+
+vscode:
+  extensions:
+    - gitpod.gitpod-web
