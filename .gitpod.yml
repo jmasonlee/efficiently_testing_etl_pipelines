@@ -1,3 +1,4 @@
 tasks:
   - name: create virtualenv
     init: poetry install
+    command: poetry shell
