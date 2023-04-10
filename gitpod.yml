@@ -1,4 +1,4 @@
 tasks:
   - name: create virtualenv
-    before: >
+    init: >
       poetry install
