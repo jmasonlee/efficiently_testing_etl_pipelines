@@ -8,3 +8,6 @@ tasks:
       poetry install
       
     command: poetry shell
+vscode:
+  extensions:
+    - ms-python.python
