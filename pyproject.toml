@@ -13,6 +13,8 @@ requires-python = "<3.11"
 python = "^3.8"
 pytest = "^7.2.2"
 pyspark = "^3.3.2"
+approval-utilities = "^8.2.5"
+approvaltests = "^8.2.5"
 
 [tool.pytest.ini_options]
 pythonpath = [

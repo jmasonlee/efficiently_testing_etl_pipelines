@@ -1,0 +1,1 @@
+DataFrame[clarity: string, cut: string, price: bigint, moving_avg: double, imputed: double]
