@@ -35,7 +35,6 @@ def replace_null_prices_with_floating_averages(df: DataFrame) -> DataFrame:
         the average price for that day of all diamonds with the same cut, color, and clarity.
     """
 
-    df.where(df['price'].isNull()).show(50)
     window = Window.partitionBy('cut', 'clarity').orderBy('price').rowsBetween(-3, 3)
     moving_avg = mean(df['price']).over(window)
     df = df.withColumn('moving_avg', moving_avg)
