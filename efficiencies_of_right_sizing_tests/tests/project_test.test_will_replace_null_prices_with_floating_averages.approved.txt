@@ -1,1 +1,1 @@
-['clarity::string', 'cut::string', 'price::bigint', 'moving_avg::double', 'imputed::double']
+clarity::string | cut::string | price::bigint | moving_avg::double | imputed::double
