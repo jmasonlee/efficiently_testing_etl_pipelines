@@ -15,6 +15,7 @@ pytest = "^7.2.2"
 pyspark = "^3.3.2"
 approval-utilities = "^8.2.5"
 approvaltests = "^8.2.5"
+pandas = "^2.0.0"
 
 [tool.pytest.ini_options]
 pythonpath = [
