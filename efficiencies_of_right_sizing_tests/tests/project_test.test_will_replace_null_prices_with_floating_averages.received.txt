@@ -1,0 +1,5 @@
+clarity  cut  price
+    SI2 good    327
+------- WITH NULL PRICES REPLACED -------
+clarity  cut  price  moving_avg  imputed
+    SI2 good    327       327.0    327.0
