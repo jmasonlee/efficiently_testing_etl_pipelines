@@ -3,7 +3,11 @@ from approvaltests import verify
 from pyspark.sql import DataFrame, Row
 
 def test_will_replace_null_prices_with_floating_averages(spark) -> None:
-    input_df = spark.createDataFrame([Row(price=327,cut="good",clarity= "SI2")])
+    price=327
+    cut = "good"
+    clarity = "SI2"
+    
+    input_df = spark.createDataFrame([Row(price=price,cut=cut,clarity=clarity)])
     output_df = replace_null_prices_with_floating_averages(input_df)
     
     output_df_as_str = get_string_representation_of_dataframe(output_df)
