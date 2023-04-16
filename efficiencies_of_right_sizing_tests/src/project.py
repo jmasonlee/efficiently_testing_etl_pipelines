@@ -3,17 +3,17 @@ from pyspark.sql.functions import mean
 
 from pyspark.sql.functions import when, col
 
-def replace_null(orig: Column, ma: Column):
+def replace_null(orig: Column, average: Column):
     """replace_null
 
     Args:
-        orig (_type_): _description_
-        ma (_type_): _description_
+        orig (Column): The original column
+        average (double): the mean for that column
 
     Returns:
-        _type_: _description_
+        Column: The original column with null values replaced by the average
     """
-    return when(orig.isNull(), ma).otherwise(orig)
+    return when(orig.isNull(), average).otherwise(orig)
 
 def replace_null_prices_with_floating_averages(df: DataFrame) -> DataFrame:
     """replace_null_prices_with_floating_averages
