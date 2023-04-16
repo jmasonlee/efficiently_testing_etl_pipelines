@@ -1,2 +1,2 @@
-clarity::string  cut::string  price::bigint  moving_avg::double  imputed::double
+clarity  cut  price  moving_avg  imputed
     SI2 good    327       327.0    327.0
