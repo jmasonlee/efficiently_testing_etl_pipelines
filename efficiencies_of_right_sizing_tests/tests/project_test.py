@@ -4,12 +4,16 @@ from approvaltests.scrubbers.scrubbers import create_regex_scrubber
 from pyspark.sql import DataFrame, Row, SparkSession
 
 
+def verify_will_replace_null_values__with_floating_averages(spark, price):
+    return verify_all_combinations(impute_null_values_for_diamond, [[spark], price], options=Options().with_scrubber(
+                create_regex_scrubber("<pyspark.sql.session.SparkSession object at (.*?)>", "[SparkSession]")
+            ))
+
+
 def test_will_replace_null_prices_with_floating_averages(spark: SparkSession) -> None:
     price = [327]
 
-    verify_all_combinations(impute_null_values_for_diamond, [[spark], price], options=Options().with_scrubber(
-            create_regex_scrubber("<pyspark.sql.session.SparkSession object at (.*?)>", "[SparkSession]")
-        ))
+    verify_will_replace_null_values__with_floating_averages(spark, price)
    
 
 def impute_null_values_for_diamond(spark: SparkSession, price:float, cut: str = "good", clarity: str = "SI2", color: str = "A") -> str:
