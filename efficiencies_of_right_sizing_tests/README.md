@@ -73,9 +73,24 @@ The special setup to make it easier to add a new variation records the expected 
 
 ![First Diff](images/first_diff.png)
 
+Each line represents a test case. The portion before the `=>` represents the inputs. You can see a test case for a price of 327, and a test case for a price of None in the `received.txt` file. The portion after the `=>` represents the output of each test case. The test case with a price of None is highlighted in red because it doesn't exist in the `approved.txt` file.
 
+The new test case in the `received.txt` file looks good. Let's approve it by clicking the arrow in between the two files. 
+
+![arrow](images/arrow.png)
+
+If you don't see a diff like the one above, you can also run:
+
+```
+mv diamond_pricing_test.test_will_replace_null_prices_with_floating_averages.received.txt diamond_pricing_test.test_will_replace_null_prices_with_floating_averages.approved.txt
+```
+
+If we run our tests again, the `.recieved.txt` file goes away, and the tests pass.
 
 ### 3. Let's increase the number of inputs - Add a variable for diamond cut
+
+
+
 #### 3.a. Add all of the possible variations for diamond cut
 ### 4. Add a variable for diamond clarity
 ### 5. Add a variable for diamond color

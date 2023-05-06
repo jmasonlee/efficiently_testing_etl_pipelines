@@ -1,1 +1,2 @@
 args: ([SparkSession], 327) => 327.0
+args: ([SparkSession], None) => 300.0
