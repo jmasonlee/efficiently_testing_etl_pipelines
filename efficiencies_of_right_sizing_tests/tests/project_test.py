@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from efficiencies_of_right_sizing_tests.tests.test_magic_do_not_look.verification_helpers import verify_will_replace_null_values_with_floating_averages
+from efficiencies_of_right_sizing_tests.tests.test_helpers.verification_helpers import verify_will_replace_null_values_with_floating_averages
 
 
 def test_will_replace_null_prices_with_floating_averages(spark: SparkSession) -> None:
