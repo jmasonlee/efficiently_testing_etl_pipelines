@@ -71,6 +71,8 @@ FAILED efficiencies_of_right_sizing_tests/tests/diamond_pricing_test.py::test_wi
 ```
 The special setup to make it easier to add a new variation records the expected output in a file with the extension `.approved.txt`. In this case, the file recording our expected output is `diamond_pricing_test.test_will_replace_null_prices_with_floating_averages.approved.txt`. If the output doesn't match what we expected, our special test setup will record the actual output in a file with the extension `recieved.txt`. In this case, it has written out the new output to `diamond_pricing_test.test_will_replace_null_prices_with_floating_averages.received.txt`. A diff of the two files should pop up automatically. In gitpod, it looks like this:
 
+![First Diff](images/first_diff.png)
+
 
 
 ### 3. Let's increase the number of inputs - Add a variable for diamond cut

@@ -3,6 +3,7 @@ from typing import List
 from approvaltests import verify_all_combinations, Options
 from approvaltests.scrubbers.scrubbers import create_regex_scrubber
 from pyspark.sql import DataFrame, Row, SparkSession
+from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 
 def verify_will_replace_null_values_with_floating_averages(
     spark, price:List[float], cut: List[str] = [], clarity: List[str] = [], color: List[str] = []
@@ -21,9 +22,22 @@ def verify_will_replace_null_values_with_floating_averages(
             ))
     
 def impute_null_values_for_diamond(spark: SparkSession, price:float, cut: str = "good", clarity: str = "SI2", color: str = "A") -> str:
-    input_df = spark.createDataFrame([
-        Row(id=1, price=price,cut=cut,clarity=clarity,color=color)
+    schema = StructType([
+        StructField("id", IntegerType()),
+        StructField("price", IntegerType()),
+        StructField("cut", StringType()),
+        StructField("clarity", StringType()),
+        StructField("color", StringType()),
     ])
+    
+    input_df = spark.createDataFrame(
+        schema= schema,
+        data=[
+            Row(id=1, price=price,cut=cut,clarity=clarity,color=color),
+            Row(id=2, price=300,cut=cut,clarity=clarity,color=color),
+        ]
+    )
+    
     output_df = replace_null_prices_with_floating_averages(input_df)
     
     return output_df.where(output_df.id==1).first()['price']
