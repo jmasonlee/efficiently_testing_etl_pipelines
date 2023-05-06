@@ -1,2 +1,1 @@
- price  cut clarity color  moving_avg  imputed
-   327 good     SI2     A       327.0    327.0
+args: ([SparkSession], 327) => 327
