@@ -48,13 +48,31 @@ If you get an error like this:
 bash: pytest: command not found
 ```
 
-You will need to run the ./setup.sh script manually by typing 
+You will need to run the `./setup.sh` script manually by typing 
 ```
 ./setup.sh
 ```
 From the root directory of the repository.
 
 ### 2. Add a price of None
+The tests in `diamond_pricing_test.py` are set up to make it especially easy to add a new variation. Right now, we only have one test for a diamond with a price of 327.
+
+![Starting Test](images/initial_test.png)
+
+The price is wrapped in an array. We add a new test by adding a new item to that array.
+
+![Two Tests](images/test_with_none.png)
+
+When we run the tests, they will fail, because we haven't specified what the output should be.
+```
+============================================== short test summary info ==============================================
+FAILED efficiencies_of_right_sizing_tests/tests/diamond_pricing_test.py::test_will_replace_null_prices_with_floating_averages - approvaltests.approval_exception.ApprovalException: Approval Mismatch, received != approved
+================================================ 1 failed in 10.06s =================================================
+```
+The special setup to make it easier to add a new variation records the expected output in a file with the extension `.approved.txt`. In this case, the file recording our expected output is `diamond_pricing_test.test_will_replace_null_prices_with_floating_averages.approved.txt`. If the output doesn't match what we expected, our special test setup will record the actual output in a file with the extension `recieved.txt`. In this case, it has written out the new output to `diamond_pricing_test.test_will_replace_null_prices_with_floating_averages.received.txt`. A diff of the two files should pop up automatically. In gitpod, it looks like this:
+
+
+
 ### 3. Let's increase the number of inputs - Add a variable for diamond cut
 #### 3.a. Add all of the possible variations for diamond cut
 ### 4. Add a variable for diamond clarity

@@ -3,7 +3,7 @@ from efficiencies_of_right_sizing_tests.tests.test_helpers.verification_helpers 
 
 
 def test_will_replace_null_prices_with_floating_averages(spark: SparkSession) -> None:
-    price = [327]
+    price = [327, None]
 
     verify_will_replace_null_values_with_floating_averages(spark, price)
    
