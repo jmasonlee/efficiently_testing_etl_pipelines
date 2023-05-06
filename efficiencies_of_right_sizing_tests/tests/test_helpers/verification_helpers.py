@@ -1,4 +1,4 @@
-from src.project import replace_null_prices_with_floating_averages
+from src.diamond_pricing import replace_null_prices_with_floating_averages
 from typing import List
 from approvaltests import verify_all_combinations, Options
 from approvaltests.scrubbers.scrubbers import create_regex_scrubber
