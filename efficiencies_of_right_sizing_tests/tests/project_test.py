@@ -4,14 +4,14 @@ from pyspark.sql import DataFrame, Row, SparkSession
 
 
 def test_will_replace_null_prices_with_floating_averages(spark: SparkSession) -> None:
-    output_df_as_str = impute_null_values_for_diamond(spark, price=327, cut = "good", clarity = "SI2", color = "A")
+    output_df_as_str = impute_null_values_for_diamond(spark, price=327, cut = "good", clarity = "SI2")
 
     verify(output_df_as_str)
 
 def get_string_representation_of_dataframe(df: DataFrame) -> str:
     return df.toPandas().to_string(header=True, index=False)
 
-def impute_null_values_for_diamond(spark: SparkSession, price:float, cut: str, clarity: str, color: str) -> str:
+def impute_null_values_for_diamond(spark: SparkSession, price:float, cut: str, clarity: str, color: str = "A") -> str:
     input_df = spark.createDataFrame([
         Row(price=price,cut=cut,clarity=clarity,color=color)
     ])
