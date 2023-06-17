@@ -13,11 +13,11 @@ class NotebookNamer(StackFrameNamer):
 
     def get_received_filename(self, base: Optional[str] = None) -> str:
         name = self.get_test_name(base)
-        return f'{name}.{self.RECEIVED}.txt'
+        return f'{name}{self.RECEIVED}.txt'
 
     def get_approved_filename(self, base: Optional[str] = None) -> str:
         name = self.get_test_name(base)
-        return f'{name}.{self.APPROVED}.txt'
+        return f'{name}{self.APPROVED}.txt'
 
 
 def verify_will_replace_null_values_with_floating_averages(
