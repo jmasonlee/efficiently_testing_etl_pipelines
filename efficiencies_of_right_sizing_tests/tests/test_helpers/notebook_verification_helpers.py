@@ -8,17 +8,16 @@ from pyspark.sql import DataFrame, Row, SparkSession
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 
 class NotebookNamer(StackFrameNamer):
+    def get_test_name(self, i_test_name):
+        return base.split('.')[1]
+
     def get_received_filename(self, base: Optional[str] = None) -> str:
-        print('***************** RECIEVED NAMER')
-        print(f'{base=}')
-        name_parts = base.split('.')
-        name = name_parts[1]
-        print(f'{name=}')
-        return name+'SSSSSSSSSSS'+self.RECEIVED
+        name = get_test_name(base)
+        return f'{name}.{self.RECEIVED}.txt'
 
     def get_approved_filename(self, base: Optional[str] = None) -> str:
-        print(base)
-        return base+self.APPROVED
+        name = get_test_name(base)
+        return f'{name}.{self.APPROVED}.txt'
 
 
 def verify_will_replace_null_values_with_floating_averages(
