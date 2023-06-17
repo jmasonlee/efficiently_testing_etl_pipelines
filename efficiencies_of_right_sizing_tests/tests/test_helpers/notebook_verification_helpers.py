@@ -12,11 +12,11 @@ class NotebookNamer(StackFrameNamer):
         return base.split('.')[1]
 
     def get_received_filename(self, base: Optional[str] = None) -> str:
-        name = get_test_name(base)
+        name = self.get_test_name(base)
         return f'{name}.{self.RECEIVED}.txt'
 
     def get_approved_filename(self, base: Optional[str] = None) -> str:
-        name = get_test_name(base)
+        name = self.get_test_name(base)
         return f'{name}.{self.APPROVED}.txt'
 
 
