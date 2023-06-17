@@ -9,7 +9,7 @@ from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 
 class NotebookNamer(StackFrameNamer):
     def get_test_name(self, i_test_name):
-        return base.split('.')[1]
+        return i_test_name.split('.')[1]
 
     def get_received_filename(self, base: Optional[str] = None) -> str:
         name = self.get_test_name(base)
