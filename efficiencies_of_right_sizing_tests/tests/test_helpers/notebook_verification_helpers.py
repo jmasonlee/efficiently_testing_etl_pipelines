@@ -1,12 +1,13 @@
 from os.path import split
 from diamond_pricing import replace_null_prices_with_floating_averages
 from typing import List, Optional
-from approvaltests import verify_all_combinations, Options, Namer
+from approvaltests import verify_all_combinations, Options
+from approvaltests.namer.stack_frame_namer import StackFrameNamer
 from approvaltests.scrubbers.scrubbers import create_regex_scrubber
 from pyspark.sql import DataFrame, Row, SparkSession
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 
-class NotebookNamer(Namer):
+class NotebookNamer(StackFrameNamer):
     def get_received_filename(self, base: Optional[str] = None) -> str:
         print('***************** RECIEVED NAMER')
         print(f'{base=}')
@@ -17,10 +18,8 @@ class NotebookNamer(Namer):
 
     def get_approved_filename(self, base: Optional[str] = None) -> str:
         print(base)
-        return base+self.RECEIVED
+        return base+self.APPROVED
 
-    def get_basename(self):
-        return "diamond_pricing_test"
 
 def verify_will_replace_null_values_with_floating_averages(
     spark, price:List[float], cut: List[str] = [], clarity: List[str] = [], color: List[str] = []
