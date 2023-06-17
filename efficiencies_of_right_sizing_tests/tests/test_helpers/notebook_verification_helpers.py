@@ -1,7 +1,8 @@
 from os.path import split
 from diamond_pricing import replace_null_prices_with_floating_averages
 from typing import List, Optional
-from approvaltests import NamerBase, verify_all_combinations, Options
+from approvaltests import verify_all_combinations, Options
+from approvaltests.namer.namer_base import NamerBase
 from approvaltests.scrubbers.scrubbers import create_regex_scrubber
 from pyspark.sql import DataFrame, Row, SparkSession
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType
