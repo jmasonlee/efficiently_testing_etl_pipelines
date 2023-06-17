@@ -12,7 +12,7 @@ class NotebookNamer(StackFrameNamer):
         print('***************** RECIEVED NAMER')
         print(f'{base=}')
         name_parts = base.split('.')
-        name = '.'.join(name_parts.pop(0))
+        name = name_parts[1]
         print(f'{name=}')
         return name+'SSSSSSSSSSS'+self.RECEIVED
 
