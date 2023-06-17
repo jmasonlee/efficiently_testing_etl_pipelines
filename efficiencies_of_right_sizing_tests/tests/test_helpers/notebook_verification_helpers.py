@@ -6,7 +6,7 @@ from approvaltests.scrubbers.scrubbers import create_regex_scrubber
 from pyspark.sql import DataFrame, Row, SparkSession
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 
-class NotebookNamer(Namer):
+class NotebookNamer(NamerBase):
     def get_received_filename(self, base: Optional[str] = None) -> str:
         print('***************** RECIEVED NAMER')
         print(f'{base=}')
