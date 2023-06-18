@@ -23,8 +23,6 @@ class NotebookNamer(StackFrameNamer):
 def verify_will_replace_null_values_with_floating_averages(
     spark, price:List[float], cut: List[str] = [], clarity: List[str] = [], color: List[str] = []
     ) -> None:
-    
-    print("**************** HEY!!")
 
     arguments = [[spark], price]
     if cut:
