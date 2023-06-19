@@ -3,24 +3,6 @@
     "carat": 0.23,
     "clarity": "SI1",
     "color": "F",
-    "clarity_index": 0.0,
-    "color_index": 1.0,
-    "clarity_vector": {
-      "type": 0,
-      "size": 1,
-      "indices": [
-        0
-      ],
-      "values": [
-        1.0
-      ]
-    },
-    "color_vector": {
-      "type": 0,
-      "size": 1,
-      "indices": [],
-      "values": []
-    },
     "indep_vars": {
       "type": 1,
       "values": [
@@ -33,29 +15,8 @@
   {
     "carat": 0.23,
     "clarity": "SI2",
-    "cut": "Ideal",
     "color": "E",
     "price": 326.0,
-    "lprice": 5.786897381366708,
-    "moving_avg": 326.0,
-    "clarity_index": 1.0,
-    "color_index": 0.0,
-    "clarity_vector": {
-      "type": 0,
-      "size": 1,
-      "indices": [],
-      "values": []
-    },
-    "color_vector": {
-      "type": 0,
-      "size": 1,
-      "indices": [
-        0
-      ],
-      "values": [
-        1.0
-      ]
-    },
     "indep_vars": {
       "type": 1,
       "values": [
