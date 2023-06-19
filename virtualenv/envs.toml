@@ -1,3 +1,7 @@
 [efficiently-testing-etl-pipelines-6dMNhAIF]
 minor = "3.8"
 patch = "3.8.16"
+
+[efficiently-testing-etl-pipelines-ua2YHpfB]
+minor = "3.8"
+patch = "3.8.17"

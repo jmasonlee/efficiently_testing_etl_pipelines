@@ -1,7 +1,16 @@
 from pyspark.sql import DataFrame
 from pyspark.sql.functions import log
 
-def prep_for_linear_regression(df: DataFrame):
-    df = df[['carat', 'clarity', 'price']]
+from build_indep_vars import build_indep_vars
+
+
+def transform(df: DataFrame) -> DataFrame:
+    df = df[['carat', 'clarity', 'color', 'price']]
 
     df = df.withColumn('lprice', log('price'))
+
+    df = build_indep_vars(df, ['carat', 'clarity', 'color'],
+                                      categorical_vars=['clarity'],
+                                      keep_intermediate=False,
+                                      summarizer=True)
+    return df
