@@ -7,10 +7,10 @@
     "price": 326.0,
     "indep_vars": {
       "type": 0,
-      "size": 6,
+      "size": 7,
       "indices": [
         0,
-        4
+        5
       ],
       "values": [
         0.23,
@@ -25,14 +25,17 @@
     "color": "D",
     "price": 2460.0,
     "indep_vars": {
-      "type": 1,
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
       "values": [
         0.21,
         1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
+        1.0
       ]
     }
   },
@@ -43,14 +46,17 @@
     "color": "D",
     "price": 2690.0,
     "indep_vars": {
-      "type": 1,
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
       "values": [
         0.21,
         1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
+        1.0
       ]
     }
   },
@@ -61,14 +67,17 @@
     "color": "D",
     "price": 2690.0,
     "indep_vars": {
-      "type": 1,
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
       "values": [
         0.21,
         1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
+        1.0
       ]
     }
   },
@@ -79,14 +88,17 @@
     "color": "D",
     "price": 2692.0,
     "indep_vars": {
-      "type": 1,
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
       "values": [
         0.21,
         1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
+        1.0
       ]
     }
   },
@@ -98,7 +110,7 @@
     "price": 2000.0,
     "indep_vars": {
       "type": 0,
-      "size": 6,
+      "size": 7,
       "indices": [
         0,
         1
@@ -110,18 +122,42 @@
     }
   },
   {
+    "id": "DI-30",
+    "carat": 0.32,
+    "clarity": "I1",
+    "color": "D",
+    "price": 345.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        2,
+        4
+      ],
+      "values": [
+        0.32,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
     "id": "minimum_inputs",
     "carat": 0.23,
     "clarity": "SI1",
     "color": "F",
     "indep_vars": {
-      "type": 1,
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        3,
+        6
+      ],
       "values": [
         0.23,
-        0.0,
         1.0,
-        0.0,
-        0.0,
         1.0
       ]
     }
