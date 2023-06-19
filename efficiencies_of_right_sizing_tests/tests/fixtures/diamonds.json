@@ -1,0 +1,28 @@
+[
+ {
+   "id": 1,
+   "carat": 0.23,
+   "cut": "Ideal",
+   "color": "E",
+   "clarity": "SI2",
+   "depth": 61.5,
+   "table": 55,
+   "price": 326,
+   "x": 3.95,
+   "y": 3.98,
+   "z": 2.43
+ },
+ {
+   "id": null,
+   "carat": 0.23,
+   "cut": "Good",
+   "color": "F",
+   "clarity": "SI1",
+   "depth": null,
+   "table": null,
+   "price": null,
+   "x": null,
+   "y": null,
+   "z": null
+ }
+]
