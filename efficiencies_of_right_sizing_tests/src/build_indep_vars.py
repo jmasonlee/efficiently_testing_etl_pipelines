@@ -34,24 +34,6 @@ def build_indep_vars(df, independent_vars, categorical_vars=None, keep_intermedi
     model = pipeline.fit(df)
     df = model.transform(df)
 
-    if summarizer:
-        param_crosswalk = {}
-
-        i = 0
-        for x in independent_vars:
-            if '_vector' in x[-7:]:
-                xrs = x.rstrip('_vector')
-                dst = df[[xrs, '{}_index'.format(xrs)]].distinct().collect()
-
-                for row in dst:
-                    param_crosswalk[int(row['{}_index'.format(xrs)]+i)] = row[xrs]
-                maxind = max(param_crosswalk.keys())
-                del param_crosswalk[maxind] #for droplast
-                i += len(dst)
-            elif '_index' not in x[:-6]:
-                param_crosswalk[i] = x
-                i += 1
-
     if not keep_intermediate:
         fcols = [c for c in df.columns if '_index' not in c[-6:] and '_vector' not in c[-7:]]
         df = df[fcols]

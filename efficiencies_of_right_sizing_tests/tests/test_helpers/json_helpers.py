@@ -10,7 +10,8 @@ def create_df_from_json(json_file, spark):
 
 def data_frame_to_json(df: DataFrame) -> List:
     output = [json.loads(item) for item in df.toJSON().collect()]
-    output.sort(key=lambda item: item["business_id"])
+    print(output)
+    output.sort(key=lambda item: item["carat"])
     return output
 
 

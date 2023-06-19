@@ -1,0 +1,32 @@
+[
+  {
+    "carat": 0.23,
+    "clarity": "SI2",
+    "color": "E",
+    "price": 326,
+    "lprice": 5.786897381366708,
+    "indep_vars": {
+      "type": 1,
+      "values": [
+        0.23,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "carat": 0.25,
+    "clarity": "SI1",
+    "color": "F",
+    "price": 326,
+    "lprice": 5.786897381366708,
+    "indep_vars": {
+      "type": 1,
+      "values": [
+        0.25,
+        1.0,
+        0.0
+      ]
+    }
+  }
+]
