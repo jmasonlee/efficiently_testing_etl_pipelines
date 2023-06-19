@@ -13,15 +13,16 @@ def build_indep_vars(df, independent_vars, categorical_vars=None, keep_intermedi
 
     from pyspark.ml import Pipeline
     from pyspark.ml.feature import StringIndexer, OneHotEncoder, VectorAssembler
-
+    idx = 'index'
+    vec = 'vector'
     if categorical_vars:
         string_indexer = [StringIndexer(inputCol=x,
-                                        outputCol='{}_index'.format(x))
+                                        outputCol=f"{x}_{idx}")
                           for x in categorical_vars]
 
         encoder        = [OneHotEncoder(dropLast=True,
-                                        inputCol ='{}_index' .format(x),
-                                        outputCol='{}_vector'.format(x))
+                                        inputCol =f'{x}_{idx}',
+                                        outputCol=f'{x}_{vec}')
                           for x in categorical_vars]
 
         independent_vars = ['{}_vector'.format(x) if x in categorical_vars else x for x in independent_vars]
@@ -35,7 +36,7 @@ def build_indep_vars(df, independent_vars, categorical_vars=None, keep_intermedi
     df = model.transform(df)
 
     if not keep_intermediate:
-        fcols = [c for c in df.columns if '_index' not in c[-6:] and '_vector' not in c[-7:]]
+        fcols = [c for c in df.columns if f'_{idx}' not in c[-3:] and f'_{vec}' not in c[-7:]]
         df = df[fcols]
 
     return df

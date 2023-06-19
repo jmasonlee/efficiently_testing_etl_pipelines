@@ -5,6 +5,8 @@
     "clarity": "SI2",
     "color": "E",
     "price": 326.0,
+    "clarity_index": 3.0,
+    "color_index": 1.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
@@ -24,6 +26,8 @@
     "clarity": "VVS1",
     "color": "D",
     "price": 2460.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
@@ -45,6 +49,8 @@
     "clarity": "VVS1",
     "color": "D",
     "price": 2690.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
@@ -66,6 +72,8 @@
     "clarity": "VVS1",
     "color": "D",
     "price": 2690.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
@@ -87,6 +95,8 @@
     "clarity": "VVS1",
     "color": "D",
     "price": 2692.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
@@ -108,6 +118,8 @@
     "clarity": "VVS1",
     "color": "G",
     "price": 2000.0,
+    "clarity_index": 0.0,
+    "color_index": 3.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
@@ -127,6 +139,8 @@
     "clarity": "I1",
     "color": "D",
     "price": 345.0,
+    "clarity_index": 1.0,
+    "color_index": 0.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
@@ -147,6 +161,8 @@
     "carat": 0.23,
     "clarity": "SI1",
     "color": "F",
+    "clarity_index": 2.0,
+    "color_index": 2.0,
     "indep_vars": {
       "type": 0,
       "size": 7,
