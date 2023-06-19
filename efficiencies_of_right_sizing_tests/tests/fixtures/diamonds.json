@@ -13,7 +13,7 @@
    "z": 2.43
  },
  {
-   "id": null,
+   "id": "minimum_inputs",
    "carat": 0.23,
    "cut": "Good",
    "color": "F",
@@ -27,7 +27,7 @@
  },
    {
    "id": "DI-26",
-   "carat": 0.23,
+   "carat": 0.21,
    "cut": "Good",
    "color": "D",
    "clarity": "VVS1",
@@ -40,7 +40,7 @@
  },
      {
    "id": "DI-26",
-   "carat": 0.23,
+   "carat": 0.21,
    "cut": "Good",
    "color": "D",
    "clarity": "VVS1",
@@ -52,13 +52,26 @@
    "z": null
  }, {
    "id": "DI-26",
-   "carat": 0.23,
+   "carat": 0.21,
    "cut": "Good",
    "color": "D",
    "clarity": "VVS1",
    "depth": null,
    "table": null,
    "price": 2690,
+   "x": null,
+   "y": null,
+   "z": null
+ },
+  {
+   "id": "DI-26",
+   "carat": 0.21,
+   "cut": "Very Good",
+   "color": "D",
+   "clarity": "VVS1",
+   "depth": null,
+   "table": null,
+   "price": 2692,
    "x": null,
    "y": null,
    "z": null

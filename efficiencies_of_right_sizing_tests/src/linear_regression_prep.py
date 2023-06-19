@@ -9,7 +9,7 @@ def transform(df: DataFrame) -> DataFrame:
 
     df = df.withColumn('lprice', log('price'))
     df = replace_null_prices_with_floating_averages(df)
-    df = df[['carat', 'clarity', 'color', 'price']]
+    df = df[['id', 'carat', 'clarity', 'color', 'price']]
     df = build_indep_vars(df, ['carat', 'clarity', 'color'],
                                       categorical_vars=['clarity', 'color'],
                                       keep_intermediate=False,

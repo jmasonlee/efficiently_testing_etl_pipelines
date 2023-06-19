@@ -1,70 +1,6 @@
 [
   {
-    "carat": 0.23,
-    "clarity": "SI1",
-    "color": "F",
-    "indep_vars": {
-      "type": 0,
-      "size": 5,
-      "indices": [
-        0,
-        2
-      ],
-      "values": [
-        0.23,
-        1.0
-      ]
-    }
-  },
-  {
-    "carat": 0.23,
-    "clarity": "VVS1",
-    "color": "D",
-    "price": 2690.0,
-    "indep_vars": {
-      "type": 1,
-      "values": [
-        0.23,
-        1.0,
-        0.0,
-        1.0,
-        0.0
-      ]
-    }
-  },
-  {
-    "carat": 0.23,
-    "clarity": "VVS1",
-    "color": "D",
-    "price": 2690.0,
-    "indep_vars": {
-      "type": 1,
-      "values": [
-        0.23,
-        1.0,
-        0.0,
-        1.0,
-        0.0
-      ]
-    }
-  },
-  {
-    "carat": 0.23,
-    "clarity": "VVS1",
-    "color": "D",
-    "price": 2690.0,
-    "indep_vars": {
-      "type": 1,
-      "values": [
-        0.23,
-        1.0,
-        0.0,
-        1.0,
-        0.0
-      ]
-    }
-  },
-  {
+    "id": "1",
     "carat": 0.23,
     "clarity": "SI2",
     "color": "E",
@@ -75,6 +11,92 @@
       "indices": [
         0,
         4
+      ],
+      "values": [
+        0.23,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "indep_vars": {
+      "type": 1,
+      "values": [
+        0.21,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "indep_vars": {
+      "type": 1,
+      "values": [
+        0.21,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "indep_vars": {
+      "type": 1,
+      "values": [
+        0.21,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2692.0,
+    "indep_vars": {
+      "type": 1,
+      "values": [
+        0.21,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "id": "minimum_inputs",
+    "carat": 0.23,
+    "clarity": "SI1",
+    "color": "F",
+    "indep_vars": {
+      "type": 0,
+      "size": 5,
+      "indices": [
+        0,
+        2
       ],
       "values": [
         0.23,
