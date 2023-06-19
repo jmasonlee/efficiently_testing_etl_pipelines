@@ -40,25 +40,6 @@
     "id": "DI-26",
     "carat": 0.21,
     "clarity": "VVS1",
-    "color": "G",
-    "price": 2000.0,
-    "indep_vars": {
-      "type": 0,
-      "size": 6,
-      "indices": [
-        0,
-        1
-      ],
-      "values": [
-        0.21,
-        1.0
-      ]
-    }
-  },
-  {
-    "id": "DI-26",
-    "carat": 0.21,
-    "clarity": "VVS1",
     "color": "D",
     "price": 2690.0,
     "indep_vars": {
@@ -92,7 +73,7 @@
     }
   },
   {
-    "id": "DI-26",
+    "id": "DI-27",
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "D",
@@ -106,6 +87,25 @@
         1.0,
         0.0,
         0.0
+      ]
+    }
+  },
+  {
+    "id": "DI-28",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "G",
+    "price": 2000.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 6,
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        0.21,
+        1.0
       ]
     }
   },
