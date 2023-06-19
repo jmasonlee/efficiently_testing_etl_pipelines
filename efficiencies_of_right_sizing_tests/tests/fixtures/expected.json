@@ -7,13 +7,50 @@
     "price": 326.0,
     "indep_vars": {
       "type": 0,
-      "size": 5,
+      "size": 6,
       "indices": [
         0,
         4
       ],
       "values": [
         0.23,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2460.0,
+    "indep_vars": {
+      "type": 1,
+      "values": [
+        0.21,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "G",
+    "price": 2000.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 6,
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        0.21,
         1.0
       ]
     }
@@ -31,6 +68,7 @@
         1.0,
         0.0,
         1.0,
+        0.0,
         0.0
       ]
     }
@@ -48,23 +86,7 @@
         1.0,
         0.0,
         1.0,
-        0.0
-      ]
-    }
-  },
-  {
-    "id": "DI-26",
-    "carat": 0.21,
-    "clarity": "VVS1",
-    "color": "D",
-    "price": 2690.0,
-    "indep_vars": {
-      "type": 1,
-      "values": [
-        0.21,
-        1.0,
         0.0,
-        1.0,
         0.0
       ]
     }
@@ -82,6 +104,7 @@
         1.0,
         0.0,
         1.0,
+        0.0,
         0.0
       ]
     }
@@ -92,14 +115,13 @@
     "clarity": "SI1",
     "color": "F",
     "indep_vars": {
-      "type": 0,
-      "size": 5,
-      "indices": [
-        0,
-        2
-      ],
+      "type": 1,
       "values": [
         0.23,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
         1.0
       ]
     }

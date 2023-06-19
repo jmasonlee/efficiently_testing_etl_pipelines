@@ -75,5 +75,18 @@
    "x": null,
    "y": null,
    "z": null
+ },
+  {
+   "id": "DI-26",
+   "carat": 0.21,
+   "cut": "Good",
+   "color": "G",
+   "clarity": "VVS1",
+   "depth": null,
+   "table": null,
+   "price": 2000,
+   "x": null,
+   "y": null,
+   "z": null
  }
 ]
