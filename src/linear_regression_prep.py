@@ -1,8 +1,8 @@
 from pyspark.sql import DataFrame
 from pyspark.sql.functions import log
 
-from efficiencies_of_right_sizing_tests.src.build_indep_vars import build_indep_vars
-from efficiencies_of_right_sizing_tests.src.diamond_pricing import replace_null_prices_with_floating_averages
+from src.build_indep_vars import build_indep_vars
+from src.diamond_pricing import replace_null_prices_with_floating_averages
 
 
 def transform(df: DataFrame) -> DataFrame:

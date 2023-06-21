@@ -5,7 +5,7 @@ from approvaltests.scrubbers.scrubbers import create_regex_scrubber
 from pyspark.sql import Row, SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 
-from efficiencies_of_right_sizing_tests.src.diamond_pricing import replace_null_prices_with_floating_averages
+from src.diamond_pricing import replace_null_prices_with_floating_averages
 
 
 def verify_will_replace_null_values_with_floating_averages(
