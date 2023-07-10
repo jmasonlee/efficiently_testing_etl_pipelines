@@ -21,57 +21,57 @@
     }
   },
   {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
+      "values": [
+        0.21,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
+      "values": [
+        0.21,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
     "id": "DI-26-null-price",
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "D",
     "price": 2460.0,
-    "clarity_index": 0.0,
-    "color_index": 0.0,
-    "indep_vars": {
-      "type": 0,
-      "size": 7,
-      "indices": [
-        0,
-        1,
-        4
-      ],
-      "values": [
-        0.21,
-        1.0,
-        1.0
-      ]
-    }
-  },
-  {
-    "id": "DI-26",
-    "carat": 0.21,
-    "clarity": "VVS1",
-    "color": "D",
-    "price": 2690.0,
-    "clarity_index": 0.0,
-    "color_index": 0.0,
-    "indep_vars": {
-      "type": 0,
-      "size": 7,
-      "indices": [
-        0,
-        1,
-        4
-      ],
-      "values": [
-        0.21,
-        1.0,
-        1.0
-      ]
-    }
-  },
-  {
-    "id": "DI-26",
-    "carat": 0.21,
-    "clarity": "VVS1",
-    "color": "D",
-    "price": 2690.0,
     "clarity_index": 0.0,
     "color_index": 0.0,
     "indep_vars": {
