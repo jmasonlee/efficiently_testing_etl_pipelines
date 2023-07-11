@@ -1,1 +1,182 @@
+[
+  {
+    "id": "1",
+    "carat": 0.23,
+    "clarity": "SI2",
+    "color": "E",
+    "price": 326.0,
+    "clarity_index": 3.0,
+    "color_index": 1.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        5
+      ],
+      "values": [
+        0.23,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
+      "values": [
+        0.21,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
+      "values": [
+        0.21,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-26-null-price",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2690.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
+      "values": [
+        0.21,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-27",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "D",
+    "price": 2692.0,
+    "clarity_index": 0.0,
+    "color_index": 0.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1,
+        4
+      ],
+      "values": [
+        0.21,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-28",
+    "carat": 0.21,
+    "clarity": "VVS1",
+    "color": "G",
+    "price": 2000.0,
+    "clarity_index": 0.0,
+    "color_index": 3.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        0.21,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "DI-30",
+    "carat": 0.32,
+    "clarity": "I1",
+    "color": "D",
+    "price": 345.0,
+    "clarity_index": 1.0,
+    "color_index": 0.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        2,
+        4
+      ],
+      "values": [
+        0.32,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "id": "minimum_inputs",
+    "carat": 0.23,
+    "clarity": "SI1",
+    "color": "F",
+    "clarity_index": 2.0,
+    "color_index": 2.0,
+    "indep_vars": {
+      "type": 0,
+      "size": 7,
+      "indices": [
+        0,
+        3,
+        6
+      ],
+      "values": [
+        0.23,
+        1.0,
+        1.0
+      ]
+    }
+  }
+]
 
