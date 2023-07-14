@@ -4,7 +4,7 @@
     "carat": 0.23,
     "clarity": "SI2",
     "color": "E",
-    "price": 326,
+    "price": 326.0,
     "clarity_index": 3.0,
     "color_index": 1.0,
     "indep_vars": {
@@ -25,7 +25,7 @@
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "D",
-    "price": 2690,
+    "price": 3333.0,
     "clarity_index": 0.0,
     "color_index": 0.0,
     "indep_vars": {
@@ -48,7 +48,7 @@
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "D",
-    "price": 2690,
+    "price": 3333.0,
     "clarity_index": 0.0,
     "color_index": 0.0,
     "indep_vars": {
@@ -71,6 +71,7 @@
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "D",
+    "price": 2777.0,
     "clarity_index": 0.0,
     "color_index": 0.0,
     "indep_vars": {
@@ -93,7 +94,7 @@
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "D",
-    "price": 2692,
+    "price": 2692.0,
     "clarity_index": 0.0,
     "color_index": 0.0,
     "indep_vars": {
@@ -116,7 +117,7 @@
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "G",
-    "price": 2000,
+    "price": 1665.0,
     "clarity_index": 0.0,
     "color_index": 3.0,
     "indep_vars": {
@@ -137,7 +138,7 @@
     "carat": 0.32,
     "clarity": "I1",
     "color": "D",
-    "price": 345,
+    "price": 345.0,
     "clarity_index": 1.0,
     "color_index": 0.0,
     "indep_vars": {
