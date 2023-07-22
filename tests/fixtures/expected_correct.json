@@ -71,7 +71,7 @@
     "carat": 0.21,
     "clarity": "VVS1",
     "color": "D",
-    "price": 3333.0,
+    "price": 2777.0,
     "clarity_index": 0.0,
     "color_index": 0.0,
     "indep_vars": {
@@ -179,4 +179,3 @@
     }
   }
 ]
-
