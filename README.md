@@ -1,1 +1,1 @@
-https://github.com/UrbanInstitute/pyspark-tutorials/blob/master/05_moving-average-imputation.ipynb
+Code used in this tutorial is based off of the excellent: https://github.com/UrbanInstitute/pyspark-tutorials/
